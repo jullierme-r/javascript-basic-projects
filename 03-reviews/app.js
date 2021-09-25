@@ -50,7 +50,7 @@ let previousBtn = document.querySelector(".prev-btn");
 updatePerson(index); //display the screen the information of the first position of the array
 
 nextBtn.addEventListener("click", () => {
-  if (index < 3){ //if the index is not the last element of the array, increments the value
+  if (index < reviews.length - 1){ //if the index is not the last element of the array, increments the value
     index++;
   } else { //otherwise goes to the start of the array
     index = 0;
@@ -60,7 +60,7 @@ nextBtn.addEventListener("click", () => {
 
 previousBtn.addEventListener("click", () => {
   if (index === 0){ //if the index is the first element of the array, goes to the last position
-    index = 3;
+    index = reviews.length - 1;
   } else { //otherwise decrements the value
     index--;
   }
