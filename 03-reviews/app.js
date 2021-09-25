@@ -84,7 +84,7 @@ randomBtn.addEventListener("click", () => {
 
 //generates a random index
 function randomPerson() {
-  let randIndex = Math.floor(Math.random() * 4);
+  let randIndex = Math.floor(Math.random() * reviews.length);
 
   return randIndex;
 }
