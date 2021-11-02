@@ -28,26 +28,55 @@ body {
   height: 40px;
 }
 
-#top-left, #top-right, #bottom-left, #bottom-right {
+.top-left, .top-right, .bottom-left, .bottom-right, .clipboard-area {
   position: absolute;
 }
 
-#top-left {
+.top-left {
   top: 10%;
   left: 10%;
 }
 
-#top-right {
+.top-right {
   top: 10%;
   right: 10%;
 }
 
-#bottom-left {
+.bottom-left {
   bottom: 10%;
   left: 10%;
 }
 
-#bottom-right {
+.bottom-right {
   bottom: 10%;
   right: 10%;
+}
+
+.clipboard-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#clipboard {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.8rem;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 1;
 }

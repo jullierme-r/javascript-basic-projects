@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
   <title>Border Radius Previewer</title>
 </head>
@@ -24,6 +25,10 @@
     </div>
     <div class="bottom-right">
       <input type="number" name="bottom-right" id="bottom-right" class="radius">
+    </div>
+    <div class="clipboard-area">
+      <textarea name="clipboard" id="clipboard" cols="40" rows="7"></textarea>
+      <button class="btn"><abbr title="Copy to clipboard"><i class="fas fa-clipboard"></i></abbr></button>
     </div>
   </main>
   <script src="index.js"></script>
